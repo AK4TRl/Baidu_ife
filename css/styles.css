@@ -94,9 +94,6 @@ header > ul > a:hover{
 .content .stage-2{
     display: inline-block;
 }
-.stage-1 + .stage-2{
-    margin-left: 40px;
-}
 .panel-title{
     width: 100%;
     background-color: #1e1e1e;

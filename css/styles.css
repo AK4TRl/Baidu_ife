@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes appear {
+    from {
+        transform: translateX(-100px);
+    }
+}
+body{
+    height: 100vh;
+    background: #000 url(../img/bcg.jpg) no-repeat center;
+    background-size: cover;
+}
+ul > a{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+    color: #fff;
+}
+header{
+    position: fixed;
+    height: 250px;
+    width: 100vw;
+    font-family: "Segoe UI", sans-serif;
+}
+header ul{
+    display: inline-block;
+    float: right;
+    padding-top: 100px;
+    padding-right: 200px;
+    border-bottom: 1px solid #fff;
+}
+header h1{
+    display: inline-block;
+    font-weight: inherit;
+    color: #fff;
+    font-size: 36px;
+    padding: 50px 100px;
+}
+header > ul > a:hover{
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+    transition-duration: 0.4s;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:180px;
+}
+.container .hello_word{
+    padding-top:200px;
+    padding-left: 200px;
+    font-size: 72px;
+    font-family: "Segoe UI", sans-serif;
+    color: #fff;
+    text-shadow:2px 2px #FFF;
+    animation: appear 1s ease-in-out;
+}
+.hidden{
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+.content{
+    visibility: hidden;
+}
+.content > active{
+    visibility: visible;
+    transform: translateX(500px);
+}
